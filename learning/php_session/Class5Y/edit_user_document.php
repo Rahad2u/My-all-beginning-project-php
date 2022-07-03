@@ -1,0 +1,236 @@
+
+<?php 
+session_start();
+$f_name =  $_SESSION['first_name'];
+$l_name =  $_SESSION['last_name'];
+if($f_name!='' && $l_name!=''){
+
+  $connect           = mysqli_connect('localhost','root','','store2');
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;
+    1,100;1,300;1,400;1,500;1,700;1,900&family=Spline+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <title>Edit spend product</title>
+    <link rel="icon" href="./img/Webysther_20160423_-_Elephpant.svg.png">
+  </head>
+  <body class="vh-100">
+  <section class="header_section"><!-- navebar start !-->
+      <div class="container-fluid">
+        <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffe6f7;">
+  <div class="container-fluid">
+    <div class="navbar-img">
+      <a href="./index.php">
+      <img src="./img/PHP-Logo-Free-Download-PNG.png" alt=""  style="width: 120px;">
+      </a>
+    </div>
+    <div class="d-flex justify-content-center" style="color: #b30059;">
+      <h2>Welcome to store management system</h2>
+    </div>
+    <div class="d-flex justify-content-end">
+      <h6 style="margin-right: 10px; margin-top: 7px; color: #000;"><?php echo $f_name.' '.$l_name; ?></h6>
+      <a href="./logout_page.php" class="btn btn-outline-success">Logout</a>
+      </div>
+  </div>
+</nav>
+        </div>
+      </div>
+    </section><!-- navebar end !-->
+    <div class="container-fluid">
+      <div class="row">
+      <div class="col-lg-3 p-3 shadow-sm" style="border: 1px solid #c56cf0; background: #c56cf0; height: 100%; margin-top: 3px; margin-left: 3px;"><!-- categori left !-->
+    <div class="all-process">
+        <div class="dropdown shadow-lg bg-white p-3" style="border-radius: 5px;">
+          <h5 class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: #000; text-align: center; cursor: pointer;">categori</h5>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="./category.php">Add categori</a></li>
+            <li><a class="dropdown-item" href="./read_cetagori.php">Categori list</a></li>
+          </ul>
+        </div>
+        <div class="dropdown mt-4 shadow-lg bg-white p-3" style="border-radius: 5px;">
+          <h5 class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: #000; text-align: center; cursor: pointer;">Product</h5>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="./add_product.php">Add Product</a></li>
+            <li><a class="dropdown-item" href="./edit_product.php">Product list</a></li>
+          </ul>
+        </div>
+        <div class="dropdown mt-4 shadow-lg bg-white p-3" style="border-radius: 5px;">
+          <h5 class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: #000; text-align: center; cursor: pointer;">Store Product</h5>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="./add_store_product.php">Add store product</a></li>
+            <li><a class="dropdown-item" href="./list_of_product.php">Store product list</a></li>
+          </ul>
+        </div>
+        <div class="dropdown mt-4 shadow-lg bg-white p-3" style="border-radius: 5px;">
+          <h5 class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: #000; text-align: center; cursor: pointer;">Spand Product</h5>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="./spend_product.php">Add spand product</a></li>
+            <li><a class="dropdown-item" href="./list_of_spend_product.php">Spand product list</a></li>
+          </ul>
+        </div>
+        <div class="dropdown mt-4 shadow-lg bg-white p-3" style="border-radius: 5px;">
+          <h5 class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: #000; text-align: center; cursor: pointer;">Report product</h5>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="./report.php">Generate report</a></li>
+          </ul>
+        </div>
+        <div class="dropdown mt-4 shadow-lg bg-white p-3" style="border-radius: 5px;">
+          <h5 class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: #000; text-align: center; cursor: pointer;">User</h5>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="./user_form.php">Add new user</a></li>
+            <li><a class="dropdown-item" href="./user_list.php">User list</a></li>
+          </ul>
+        </div>
+        </div>
+    </div><!-- left end !-->
+    <div class="col-lg-8">
+    <?php 
+     if(isset($_GET['id'])){
+        $id  = $_GET['id'];
+       $sql_select = "SELECT * FROM user_table WHERE user_id1 =$id";
+       $sql_Q = $connect->query($sql_select);
+       
+       $con_array  =  mysqli_fetch_assoc($sql_Q);
+
+       $user_id1               = $con_array['user_id1'];
+       $user_first_name        = $con_array['user_first_name'];
+       $user_last_name         = $con_array['user_last_name'];
+       $user_email             = $con_array['user_email'];
+       $user_password          = $con_array['user_password'];
+      }
+      ?>
+   <section class="category_Add" style="margin-top: 80px;">
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-1"></div>
+               <div class="col-lg-10">
+               <?php 
+
+                    $user_firstname           = htmlspecialchars('user_firstname');
+                    $user_lastname            = htmlspecialchars('user_lastname');
+                    $n_email                  = htmlspecialchars('n_email');
+                    $user_new_password        = htmlspecialchars('user_new_password');
+                    $user_id                  = htmlspecialchars('user_e_id');
+
+                   if(isset($_GET[$user_firstname ])){
+                     $user_f_name          = $_GET[$user_firstname];
+                     $user_l_name          = $_GET[$user_lastname];
+                     $user_email           = $_GET[$n_email];
+                     $user_password        = $_GET[$user_new_password];     
+                     $u_id                 = $_GET[$user_id];     
+                    
+
+                     $sql_u = "UPDATE user_table SET user_first_name = '$user_f_name' , user_last_name= '$user_l_name',
+                     user_email='$user_email' , user_password='$user_password' WHERE user_id1='$u_id'";
+                     
+                     $sql_q = mysqli_query($connect, $sql_u);
+                     ob_start();
+                      header('location:./user_list.php');
+                     ob_clean();
+
+                   }
+                  ?>
+                   <form action="<?php $_SERVER['PHP_SELF']; ?>" method="GET" class="shadow-lg p-3" style="background: #2c214d; color: #fff;">
+                     <div class="text-form mb-5" style="text-align: center; color: #fff;">
+                       <h1>Edit User Document</h1> 
+                     </div>
+                     <div class="row">
+                      <div class="col-lg-6">
+                       <div class="mb-3">
+                         <label for="firstname" class="mb-1">First name*</label>
+                         <input type="text" placeholder="First name" class="form-control" id="firstname" name="user_firstname" value="<?php echo $user_first_name; ?>">
+                       </div>
+                       </div>
+                       <div class="col-lg-6">
+                       <label for="lastname" class="mb-1">Last name*</label>
+                         <input type="text" placeholder="Last name" class="form-control" id="lastname" name="user_lastname" value="<?php echo $user_last_name; ?>">
+                       </div>
+                       <div class="col-lg-6">
+                    <div class="mb-3">
+                     <label for="inputEmail4" class="form-label">Email*</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail" name="n_email" value="<?php echo $user_email; ?>">
+                     </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                        <label for="inputPassword4" class="form-label">New Password*</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="user_new_password" value="<?php echo $user_password; ?>">
+                        <input type="text" name="user_e_id"  value="<?php echo $user_id1; ?>" hidden>
+                     </div>
+                        </div>
+                        <div class="col-lg-6"></div>
+                        <div class="button">
+                        <button type="submit" class="btn btn-primary" style="width: 80px; background: #5d701d; border: 1px solid #5d701d; color: #fff;">Submit</button>
+                        </div>
+                   </form>
+               </div>
+               <div class="col-lg-1"></div>
+           </div>
+       </div>
+   </section>
+    </div>
+    <div class="col-lg-1"></div>
+      </div>
+    </div>
+
+    <section class="footer" style="margin-top: 150px;"><!-- footer code start !-->
+    <div class="footer-text">
+    <footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <a class="text-white" href="./index.php">@Store menagement system <h5 style="display: inline-block; color: #b30059;">Rahad hasan</h5></a>
+  </div>
+  <!-- Copyright -->
+</footer>
+    </div>
+</section><!-- footer code end !-->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+  </body>
+</html>
+<?php 
+}else{
+  header('location:login_page.php');
+}
+?>

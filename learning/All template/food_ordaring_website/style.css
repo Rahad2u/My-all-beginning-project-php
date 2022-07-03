@@ -1,0 +1,900 @@
+h1, h2, h3, h4, h5, h6, a, body, p, span{
+    font-family: 'Roboto', sans-serif;
+}
+
+html,body{
+  scroll-behavior: smooth;
+}
+.navbar a{
+    margin-left: 25%;
+}
+.navbar a img {
+    height: 49px;
+}
+.navbar .icon-set{
+    margin: 0px 0px 0px 57%;
+}
+.navbar .icon-set li{
+    padding: 1%;
+    margin-right: 10%;
+    position: relative;
+}
+.navbar .icon-set .margin-0{
+    margin-right: 0!important;
+}
+.navbar .icon-set li a{
+    color: #ff6b81;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.navbar .icon-set li a:hover{
+    color: #fc2445;
+}
+/* dropdown css */
+.navbar ul li ul{
+    position: absolute;
+    width: 200px;
+    right: 0;
+    
+    top: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 1px 2px 3px rgb(153, 0, 255,.4);
+    padding-left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition:all .5s ease-in-out;
+}
+.navbar ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.navbar ul li ul li a{
+    margin-left: 0!important;
+}
+.navbar .margin-0{
+    color: #ff6b81; 
+    cursor: pointer; 
+    font-weight: 600;
+    transition: .5s;
+}
+.navbar .margin-0:hover{
+    color: #fc2445;
+}
+.searce-box{
+    background-image: url(img/bg.jpg);
+    height: 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* search section css */
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.search input {
+    height: 60px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4
+}
+
+.search input:focus {
+    box-shadow: none;
+    border: 2px solid blue;
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 16px
+}
+
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    background: blue
+}
+
+/* explere foods css start */
+
+.explore-foods{
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+.explore-foods .explore-text h4 {
+    font-size: 31px;
+    color: rgb(24, 42, 61);
+    font-weight: 700;
+}
+.explore-foods .food-img img {
+    height: 380px;
+    width: 95%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.explore-foods .food-img h3 {
+    margin-top: -75px;
+    color: #fff;
+    font-weight: 600;
+}
+/* categoris_food_list.php CSS */
+.explore-foods .food-imgs img {
+    height: 340px;
+    width: 91%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.explore-foods .food-imgs h3 {
+    margin-top: -75px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+}
+.explore-foods .food-imgs:hover h3 {
+  color: rgb(181, 21, 230);
+}
+
+/* food menu css */
+
+.food-menu{
+    background-color: #ececec;
+}
+.food-menu h1{
+    margin-top: 4%;
+    color: rgb(24, 42, 61);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.food-menu .img-food-menu img {
+    height: 95px;
+    float: left;
+    border-radius: 18px;
+    margin-right: 31px;
+    margin-bottom: 71px;
+}
+.food-menu .set-background {
+    background-color: #fff;
+    padding: 10px 9px 10px 13px;
+    border-radius: 10px;
+    width: 48%;
+    margin-right: 22px;
+}
+.food-menu .text-menu h4{
+    font-size: 19px;
+    margin-top: 4px;
+    font-weight: bold;
+    color: #000;
+}
+.food-menu .text-menu h5{
+    color: #1f0e42;
+}
+.food-menu .text-menu p{
+    color: #7d7d7d;
+}
+.food-menu .text-menu a{
+    height: 36px;
+}
+.food-menu .m-top{
+    margin-bottom: 48px;
+}
+.footer-section{
+    margin-top: 10%;
+}
+.footer-section .bc-color{
+    background-color: #e4cfcf;
+}
+.footer-section .social-m-i .social-media-img a {
+    margin-right: 20px;
+    margin-top: 17px;
+}
+.footer-section .set-letar-spacing a h5{
+    transition: .5s;
+}
+.footer-section .set-letar-spacing a h5:hover{
+ letter-spacing: 1px;
+}
+
+/*Food Search page CSS */
+
+.searce-box form h1 span{
+    color: #fff;
+    transition: .5s;
+}
+.searce-box form h1 span:hover{
+    color: #a200ff;
+}
+
+/* category page css */
+
+.explore-foods .margin-top {
+    margin-top: 67px!important;
+}
+
+/* from section css start */
+
+.from-section{
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.from-section h2 {
+    margin-top: 15%;
+    margin-bottom: 50px;
+    font-family: serif;
+    font-size: 37px;
+    text-shadow: 2px 2px #576574;
+}
+  
+.from-section .select-food {
+    padding: 9px 19px 5px 5px;
+    border: 1px solid rgb(255, 250, 250);
+    border-radius: 16px;
+    margin-bottom: 30px;
+}
+.from-section .select-food img {
+    width: 47%;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.from-section .select-food .text-order{
+    margin-top: 14px;
+}
+.from-section .text-selected .selected {
+    color: #000;
+    margin-left: 7px;
+}
+.from-section .select-food .text-order h3{
+    color: #000;
+    font-weight: 600;
+    transition: .5s;
+    cursor: pointer;
+}
+.from-section .select-food .text-order h3:hover{
+    color: #fff;
+}
+.from-section .select-food .text-order h6{
+    color: #000;
+    font-weight: 600;
+    transition: .5s;
+    cursor: pointer;
+}
+.from-section .select-food .text-order h6:hover{
+ color: #fff;
+}
+.from-section .select-food .text-order label{
+    color: #000;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.from-section .select-food .text-order input {
+    padding: 9px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.from-section .order-food-input {
+    padding: 21px 17px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.from-section .order-food-input label {
+    color: blueviolet;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+.from-section .order-food-input label:hover{
+    color: #fff;
+}
+.from-section .order-food-text h6 {
+    color: #000;
+    margin-left: 7px;
+}
+
+
+/* Admin control css */
+
+.navbar .admin-control ul {
+    margin: 0 11%;
+}
+.navbar .admin-control ul li {
+    margin: 0 4%;
+}
+.navbar .admin-control ul li a {
+    text-decoration: none;
+    color: #ff6b81;
+    transition: .5s;
+    font-family: cursive;
+}
+.navbar .admin-control ul li a:hover{
+    color: #fc2445;
+}
+
+.admin_coltrol{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.admin_coltrol .text{
+    padding: 10% 0;
+    border-radius: 2%;
+}
+.admin_coltrol .text h3{
+    color: #000;
+}
+.admin-control .width-control{
+    text-align: center;
+}
+
+/* Admin login from */
+.login-page-body{
+    background-color: rgb(255, 231, 231);
+}
+.admin-login{
+    border: 1px solid #c56cf0;
+    background-image: url(./img/shourav-sheikh-a66sGfOnnqQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    transition: .5s;
+}
+.admin-login form label {
+    font-weight: bold;
+    color: #fff;
+}
+.admin-login form .form-text {
+    width: 70%;
+    background-color: #fc2445;
+    color: #fff;
+}
+.l-text h1 {
+    color: #000;
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 4%;
+}
+
+/* Add category CSS */
+
+.ad-admin-page .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ad-admin-page .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ad-admin-page .title label{
+    margin-right: 10px;
+}
+.ad-admin-page .radio-button .text strong {
+    margin-right: 12px;
+}
+.ad-admin-page .radio-button .text-active strong {
+    margin-right: 32px;
+}
+
+/* Admin control section css */
+
+/* .admin_coltrol h1{
+    color: #273c75;
+    text-shadow: 2px 5px 4px rgb(87 101 116 / 77%);
+    cursor: pointer;
+    transition: .5s;
+}
+.admin_coltrol h1:hover{
+      color: #f368e0;
+} */
+
+/* text color animation */
+
+/* .admin_coltrol h1 {
+  animation: color-change 4s infinite;
+}
+
+@keyframes color-change {
+  0% { color: #000; }
+  50% { color: #3399ff; }
+  100% { color: #000; }
+} */
+
+
+/* Button css */
+
+.glow-button {
+    width: 120px;
+    height: 40px;
+    border:  1px solid rgba(0,0,0,0.1);
+    outline: none;
+    color: #000;
+    background: rgba(112, 161, 255,0.4);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.glow-button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-button:active {
+    color: #000;
+    
+}
+
+.glow-button:active:after {
+    background: transparent;
+}
+
+.glow-button:hover:before {
+    opacity: 1;
+}
+
+.glow-button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(194, 52, 207);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+/* admin_category.php page button Add category css */
+
+.glow-buttonw {
+    width: 140px;
+    height: 40px;
+    border:  1px solid rgba(0,0,0,0.1);
+    outline: none;
+    color: #000;
+    background: rgba(112, 161, 255,0.4);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: .5s;
+}
+.glow-buttonw:hover{
+    color: #fff;
+}
+.glow-buttonw:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #165711, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-buttonw:active {
+    color: #000;
+}
+
+.glow-buttonw:active:after {
+    background: transparent;
+}
+
+.glow-buttonw:hover:before {
+    opacity: 1;
+}
+
+.glow-buttonw:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(194, 52, 207);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Change passwoed glow-button css */
+
+.glow-button-change {
+    width: 170px;
+    height: 40px;
+    border:  1px solid rgba(0,0,0,0.1);
+    outline: none;
+    color: #000;
+    background: rgba(112, 161, 255,0.4);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: .5s;
+}
+.glow-button-change:hover{
+    color: rgb(49, 46, 46);
+}
+.glow-button-change:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-button-change:active {
+    color: #000;
+    
+}
+
+.glow-button-change:active:after {
+    background: transparent;
+}
+
+.glow-button-change:hover:before {
+    opacity: 1;
+}
+
+.glow-button-change:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(93, 240, 130);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Edit Admin glow-button css */
+
+.glow-button-edit {
+    width: 110px;
+    height: 40px;
+    border:  1px solid rgba(0,0,0,0.1);
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: rgba(112, 161, 255,0.4);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: .5s;
+}
+.glow-button-edit:hover{
+    color: rgb(209, 204, 204);
+}
+.glow-button-edit:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-button-edit:active {
+    color: #000;
+    
+}
+
+.glow-button-edit:active:after {
+    background: transparent;
+}
+
+.glow-button-edit:hover:before {
+    opacity: 1;
+}
+
+.glow-button-edit:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(5, 88, 9);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+/* Delete Admin glow-button css */
+
+.glow-button-delete {
+    width: 110px;
+    height: 40px;
+    border:  1px solid rgba(0,0,0,0.1);
+    outline: none;
+    color: rgb(255, 253, 253);
+    background: rgba(112, 161, 255,0.4);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: .5s;
+}
+.glow-button-delete:hover{
+    color: rgb(211, 205, 205);
+}
+.glow-button-delete:before {
+    content: '';
+    background: linear-gradient(45deg, #a200ff, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #a200ff);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-button-delete:active {
+    color: #000;
+    
+}
+
+.glow-button-delete:active:after {
+    background: transparent;
+}
+
+.glow-button-delete:hover:before {
+    opacity: 1;
+}
+
+.glow-button-delete:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(245, 32, 49);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Progress bar css */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Lemonada&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f1f1f1;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.container .bar {
+  width: 200px;
+  height: 200px;
+  /*   box-shadow: -10px -10px 20px #ffffffb2,
+    inset 3px 3px 10px rgba(94, 104, 121, 0.288); */
+  /* position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f9f9f9;
+} */
+/* .bar::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset -10px -10px 50px #ffffffb2,
+    inset 10px 10px 50px rgba(94, 104, 121, 0.945);
+}
+svg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  fill: none;
+} */
+/* svg circle {
+  position: absolute;
+  stroke: #96e82c;
+  stroke-width: 0px;
+  stroke-dashoffset: 500px;
+  stroke-dasharray: 1200px;
+  transform-origin: center;
+  transform: scale(1);
+  animation: bar 4s ease-in-out forwards;
+}
+.number {
+  position: absolute;
+  /* display: flex;
+  justify-content: center;
+  align-content: center; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.6em;
+  font-family: monospace;
+  color: #000;
+} */
+/* .header {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.1em;
+  font-family: "Lemonada", cursive;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 1px;
+  animation: header 500ms 1.8s linear;
+}  */
+/* .config {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-family: cursive;
+  color: #000;
+  letter-spacing: 1px;
+  text-align: center;
+  max-height: 0;
+  animation: blink 500ms 1.8s forwards;
+} */
+/* ///////////bar/////// */
+/* @keyframes bar {
+  0% {
+    stroke-dashoffset: -800px;
+  }
+  100% {
+    stroke-dashoffset: calc(500px - (500px * 90) / 100);
+    stroke-width: 40px;
+  }
+}  */
+/* ///////////blink///////// */
+/* @keyframes blink {
+  to {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+} */
+/* ///////////blink///////// */
+/* @keyframes header {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.5;
+  }
+} */
+
+/* ------Start Media Queries Section------- */
+
+/* @media (max-width: 768px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    transform: scale(0.4);
+  }
+}
+@media (max-width: 170px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    transform: scale(0.3);
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    text-align: center;
+    font-size: 1em;
+  }
+}
+@media (max-width: 300px) {
+  .header {
+    text-align: center;
+  }
+} */
+/* -------End Media Queries Section-------- */

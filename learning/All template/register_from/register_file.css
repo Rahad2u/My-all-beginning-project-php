@@ -1,0 +1,35 @@
+h1,h2,h3,h4,h5,h6,a,span,div,body{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 100vh;
+    background: #8c7ae6;
+}
+.register_form{
+    margin-top: 100px;
+}
+.text{
+    text-align: left;
+    color: #000;
+    margin-left: 10px;
+}
+.text h2 {
+    margin-top: 3px;
+    margin-bottom: 30px;
+    border-bottom:1px dotted #000;
+    display: inline-block;
+}
+.wd_th{
+     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+     background-color: #fff; 
+     padding: 22px;
+   
+}
+.input_all{
+    
+}
+.input1{
+    width: 340px;
+    display: inline-block;
+    margin-top: 22px;
+}

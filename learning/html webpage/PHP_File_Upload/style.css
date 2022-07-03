@@ -1,0 +1,74 @@
+h1,h2,h3,h4,h5,h6,a,p,label,span{
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+.sunbmit-from{
+    margin-top: 100px;
+}
+.text-area{
+    position: relative;
+}
+.text-a {
+    font-size: 18px;
+    margin-top: 8px;
+    height: 180px;
+}
+.fonts {
+    font-size: 20px;
+    font-weight: bold;
+    color: #426ff5;
+}
+.box {
+    padding: 17px 12px;
+}
+.box h3{
+    color: #000;
+}
+.button{
+    text-align: right;
+}
+.button a{
+    font-size: 17px;
+    transition: .5s;
+    border: none;
+}
+.button a:hover{
+    background: #8814e0;
+
+}
+.sunbmit-from .check-r {
+    text-align: right;
+    display: inline-block;
+    margin-left: 328px;
+    position: absolute;
+    left: 0px;
+    right: 5px;
+    bottom: 53px;
+}
+.sunbmit-from .check-r input{
+    margin-right: 2px;
+    font-size: 20px;
+}
+.sunbmit-from .check-r input .textc{
+    color: #000;
+}
+.g-checkbox{
+    text-align: left;
+}
+
+.file {
+    margin-top: 15px;
+    text-align: left;
+    display: inline-block;
+    margin-right: 129px;
+}
+.file label {
+    font-size: 13px;
+    color: #000;
+    margin-right: 2px;
+    font-weight: 600;
+}
+.file input {
+    font-size: 11px;
+}

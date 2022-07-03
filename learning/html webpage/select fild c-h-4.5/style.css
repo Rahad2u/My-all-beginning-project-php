@@ -1,0 +1,29 @@
+
+.mt{
+    margin-top: 100px;
+    height: 400px;
+    text-align: center;
+    padding: 0 20px;
+}
+.mt label{
+    color: darkblue;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.btt{}
+.btt input {
+    padding: 4px 32px;
+    background: red;
+}
+.btt input:focus{
+    background: rgb(3, 167, 8);
+    border: 2px rgb(3, 167, 8);
+}
+form .hide {
+    font-size: 22px;
+    font-weight: 500;
+    color: #13b0d4;
+   
+}
+

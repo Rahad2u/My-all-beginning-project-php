@@ -1,0 +1,39 @@
+h1,h2,h3,h4,h5,h6,a,p,label,span{
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+.sunbmit-from{
+    margin-top: 100px;
+}
+.text-area{
+    
+}
+.text-a {
+    font-size: 18px;
+    margin-top: 8px;
+    height: 180px;
+}
+.fonts {
+    font-size: 20px;
+    font-weight: bold;
+    color: #426ff5;
+}
+.box {
+    padding: 17px 12px;
+}
+.box h3{
+    color: #000;
+}
+.button{
+    text-align: right;
+}
+.button a{
+    font-size: 17px;
+    transition: .5s;
+    border: none;
+}
+.button a:hover{
+    background: #8814e0;
+
+}

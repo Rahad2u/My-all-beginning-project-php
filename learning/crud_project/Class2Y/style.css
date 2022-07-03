@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+}
+.formtext{
+    text-align: center;
+    color: #000;
+}
+.padingf {
+    padding: 0 20px;
+}
+.form-check {
+    margin-left: 10px;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+.tsize {
+    font-weight: 500;
+    color: #000;
+}
+table td{
+    font-weight: 500;
+}

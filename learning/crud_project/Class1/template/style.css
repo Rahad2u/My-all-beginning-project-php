@@ -1,0 +1,41 @@
+h1,h2,h3,h4,h5,h6,a,span,div,body{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 100vh;
+}
+.crud_project{
+    margin-top: 100px;
+}
+.text_crud{
+    text-align: center;
+}
+.text_crud h2{
+    font-size: 41px;
+    font-weight: 600;
+    color: deeppink;
+    margin-bottom: 10px;
+}
+.text_crud p{
+    font-size: 19px;
+    font-weight: 500;
+    color: #4834d4;
+}
+.gnr a{
+    text-decoration: none;
+    color: red;
+    transition: .5s;
+}
+.gnr a:hover{
+        color: green;
+}
+.centerz{
+    text-align: center;
+}
+/* .table{
+    display: inline-grid;
+    margin-top: 30px;
+}
+table td{
+    padding: 20px 0 20px 0;
+} */

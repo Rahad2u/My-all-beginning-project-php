@@ -1,0 +1,6 @@
+samsung
+vivo
+realme
+xiaomi
+nokia
+Itel

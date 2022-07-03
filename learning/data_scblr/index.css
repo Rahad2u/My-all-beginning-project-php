@@ -1,0 +1,57 @@
+h1,h2,h3,h4,h5,h6,a,p,label,span{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 100vh;
+}
+.write{
+    margin-top: 100px;
+}
+.write .t_w{
+
+}
+.write .t_w h3{
+    color: #000;
+    font-weight: 700;
+    border-bottom: 2px dotted #000;
+    display: inline-block;
+}
+.write .t_w p{
+    font-weight: 600;
+    color: blue;
+    cursor: pointer;
+    transition: .5s;
+}
+.write .t_w p:hover{
+    color: red;
+}
+.write .t_w a{
+    text-decoration: none;
+    color: #57219e;
+    transition: .5s;
+}
+.write .t_w a:hover{
+    color: #ab0a95;
+}
+.f_section label{
+    color: #009432;
+    font-weight: bold;
+    transition: 0s;
+    cursor: pointer;
+}
+.f_section label:hover{
+    color: #EA2027;
+}
+.f-s .b-tn {
+    text-align: right;
+    margin-bottom: 20px;
+}
+.f-s textarea{
+    height: 80px;
+}
+.f_section .auto{
+    height: 400px;
+}
+.pd_t{
+    padding: 1px 17px;
+}
